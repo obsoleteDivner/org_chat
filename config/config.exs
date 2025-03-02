@@ -11,6 +11,8 @@ config :org_chat,
   ecto_repos: [OrgChat.Repo],
   generators: [timestamp_type: :utc_datetime]
 
+config :triplex, repo: OrgChat.Repo
+
 # Configures the endpoint
 config :org_chat, OrgChatWeb.Endpoint,
   url: [host: "localhost"],
