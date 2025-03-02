@@ -1,5 +1,4 @@
 defmodule OrgChat.Users do
-
   import Ecto.Query, warn: false
   alias OrgChat.Repo
   alias OrgChat.Users.User
