@@ -28,6 +28,7 @@ defmodule OrgChat.CompaniesTest do
 
   test "updates a company successfully" do
     {:ok, company} = Companies.create_company(@valid_attrs)
+
     assert {:ok, %Company{company_avatar: "new_logo.png"}} =
              Companies.update_company(company, %{company_avatar: "new_logo.png"})
   end
