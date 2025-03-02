@@ -3,7 +3,7 @@ defmodule CorporateChat.Repo.Migrations.CreateCompanies do
 
   def change do
     create table(:companies, primary_key: false) do
-      add :uuid, :uuid, primary_key: true, default: fragment("gen_random_uuid()")
+      add :uuid, :uuid, primary_key: true
       add :name, :string, null: false, unique: true
       add :full_name, :string
       add :company_avatar, :string

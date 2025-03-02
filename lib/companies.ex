@@ -21,7 +21,6 @@ defmodule OrgChat.Companies do
     Repo.delete(company)
   end
 
-
   def list_companies do
     Repo.all(Company)
   end
