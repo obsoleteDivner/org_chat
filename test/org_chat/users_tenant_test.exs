@@ -1,11 +1,10 @@
 defmodule OrgChat.UsersTenantTest do
   use OrgChat.DataCase, async: false
-  import OrgChat.UserFixtures  
-
   alias Ecto.Adapters.SQL.Sandbox
   alias OrgChat.Users
   alias OrgChat.Users.User
   alias OrgChat.Repo
+  import OrgChat.UserFixtures
 
   @tenant "app"
 
