@@ -7,9 +7,10 @@ defmodule OrgChat.Repo.Migrations.CreateUsers do
       add :email, :string, null: false
       add :first_name, :string
       add :last_name, :string
-      add :role, :string, null: false, default: "user"
+      add :role, :string
       add :password, :string, null: false
       add :password_hash, :string, null: false
+      add :properties, :map
 
       timestamps()
     end
