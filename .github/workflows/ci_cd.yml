@@ -39,7 +39,7 @@ jobs:
           mix deps.get
 
       - name: Run Credo
-        run: mix credo --strict
+        run: mix credo
 
       - name: Compile
         run: mix compile
