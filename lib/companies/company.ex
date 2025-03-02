@@ -1,3 +1,4 @@
+
 defmodule OrgChat.Companies.Company do
   use Ecto.Schema
   import Ecto.Changeset
